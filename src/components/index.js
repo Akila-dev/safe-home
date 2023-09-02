@@ -1,0 +1,9 @@
+export { default as Navbar } from "./Navbar.jsx";
+export { default as Hero } from "./Hero.jsx";
+export { default as AboutLikeSection } from "./AboutLikeSection.jsx";
+export { default as AffiliateCTA } from "./AffiliateCTA.jsx";
+export { default as Card } from "./Card.jsx";
+export { default as WhatWeOffer } from "./WhatWeOffer.jsx";
+export { default as WhyChooseUs } from "./WhyChooseUs.jsx";
+export { default as DownloadCTA } from "./DownloadCTA.jsx";
+export { default as Footer } from "./Footer.jsx";
