@@ -1,8 +1,8 @@
 import React from "react";
 
-import facebook from "../assets/facebook.png";
-import twitter from "../assets/twitter.png";
-import linkedin from "../assets/linkedin.png";
+// import facebook from "../assets/facebook.png";
+// import twitter from "../assets/twitter.png";
+// import linkedin from "../assets/linkedin.png";
 import logo from "../assets/safehome-logo.png";
 
 const Footer = () => {

@@ -8,7 +8,7 @@ import {
 	DownloadCTA,
 	WhatWeOffer,
 	WhyChooseUs,
-	Footer,
+	// Footer,
 } from "./components";
 
 // IMPORTING ALL IMAGES START
