@@ -41,3 +41,15 @@ p, button, a{
 .button{
     @apply rounded-3xl py-3 px-5 shadow
 }
+
+.footer-link{
+    @apply text-white text-[14px] leading-[29px] mb-3 block font-[400]
+}
+
+.footer-header{
+    @apply text-white font-semibold mb-5
+}
+
+.icon-link{
+    @apply w-[28px] h-[28px]
+}

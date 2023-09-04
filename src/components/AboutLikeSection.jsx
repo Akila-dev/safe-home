@@ -11,7 +11,9 @@ const AboutLikeSection = ({
 }) => {
 	return (
 		<div
-			className={`${bg} w-full pt-[25px] pb-[60px] md:pt-[50px] md:pb-[100px]`}
+			className={`${
+				bg && "bg-[var(--light-bg)]"
+			} w-full pt-[35px] pb-[60px] md:pt-[50px] md:pb-[100px]`}
 		>
 			<div className="container">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-[25px] md:gap-[100px] items-center max-w-[1000px] mx-auto">
