@@ -1,6 +1,7 @@
 import React from "react";
 
-import { Card, VisionMissionCard, TrackRecord, JoinUsCTA } from "../components";
+// import { Card, VisionMissionCard, TrackRecord, JoinUsCTA } from "../components";
+import { TrackRecord } from "../components";
 
 // IMPORTING ALL IMAGES START
 import goalbased from "../assets/goal-based.png";
