@@ -5,7 +5,6 @@ import {
 	Card,
 	WhatWeOffer,
 	WhyChooseUs,
-	// Footer,
 } from "../components";
 
 // IMPORTING ALL IMAGES START

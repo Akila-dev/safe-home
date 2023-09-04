@@ -10,3 +10,4 @@ export { default as WhyChooseUs } from "./WhyChooseUs.jsx";
 export { default as DownloadCTA } from "./DownloadCTA.jsx";
 export { default as Footer } from "./Footer.jsx";
 export { default as TrackRecord } from "./TrackRecord.jsx";
+export { default as JoinUsCTA } from "./JoinUsCTA.jsx";

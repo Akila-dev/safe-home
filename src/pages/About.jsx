@@ -4,7 +4,7 @@ import {
 	Hero2,
 	VisionMissionCard,
 	TrackRecord,
-	// Footer,
+	JoinUsCTA,
 } from "../components";
 
 // IMPORTING ALL IMAGES START
@@ -38,21 +38,7 @@ const About = () => {
 				</div>
 			</div>
 			{/* CTA */}
-			<div className="bg-[var(--light-highlight)] py-[35px] md:py-[50px]">
-				<div className="container">
-					<div className="md:max-w-[500px] lg:max-w-[639px] mx-auto text-center flex flex-col gap-[25px] items-center">
-						<h3 className="text-[32px] leading-[45.2px] sm:text-[35px] sm:leading-[48.2px] md:text-[40px] md:leading-[58.2px] lg:text-[50px] lg:leading-[67.2px] font-semibold">
-							Join us and be a part of Safe-Home today.
-						</h3>
-						<a
-							href="/"
-							className="bg-[var(--highlight)] text-white w-[256px] py-3 rounded-[2rem]"
-						>
-							Become an Affiliate
-						</a>
-					</div>
-				</div>
-			</div>
+			<JoinUsCTA />
 			{/* Track Record */}
 			<div className="pt-[35px] pb-[35px] md:pt-[100px] md:pb-[50px] container">
 				<div className="flex flex-col gap-[15px] max-w-[836px] mx-auto text-center">
@@ -77,6 +63,7 @@ const About = () => {
 					header="Expertise in Real Estate"
 					text="Our real estate specialists bring unparalleled expertise in property analysis, market trends, and investment opportunities. Leveraging their extensive industry experience, they have navigated numerous successful real estate ventures, identifying high-potential properties and delivering exceptional returns to investors."
 					imgSide="right"
+					bg="yes"
 				/>
 				<TrackRecord
 					img={about2}
@@ -89,6 +76,7 @@ const About = () => {
 					header="Strong Portfolio Management"
 					text="With decades of combined experience, our founding team has accumulated and managed a diverse portfolio of real estate assets, ensuring the growth and stability of our cooperative's investments. This track record of portfolio management serves as a testament to their commitment to delivering financial success to our valued members."
 					imgSide="right"
+					bg="yes"
 				/>
 				<TrackRecord
 					img={about4}

@@ -1,11 +1,9 @@
 import React from "react";
 
-const TrackRecord = ({ img, header, text, imgSide }) => {
+const TrackRecord = ({ img, header, text, imgSide, bg }) => {
 	return (
 		<div
-			className={`w-full pt-[35px] pb-[60px] ${
-				imgSide === "right" && "bg-[var(--light-bg)]"
-			}`}
+			className={`w-full pt-[35px] pb-[60px] ${bg && "bg-[var(--light-bg)]"}`}
 		>
 			<div className="container">
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-[0px] justify-center items-center max-w-[1000px] mx-auto">
