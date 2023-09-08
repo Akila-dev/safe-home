@@ -1,8 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./sidebar";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "remixicon/fonts/remixicon.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import "remixicon/fonts/remixicon.css";
 
 const DashboardLayout = () => {
 	return (
