@@ -4,8 +4,6 @@ import { Home, About, Services } from "./pages";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import AppWrapperComp from "./components/appWrapper";
-import DashboardLayout from "./components/appWrapper/DashboardLayout.jsx";
-import WebPageLayout from "./components/appWrapper/WebPageLayout.jsx";
 import Sidebar from "./components/appWrapper/sidebar";
 import AccountPage from "./pages/account";
 import LoginPage from "./pages/auth/login";
@@ -30,26 +28,35 @@ function App() {
 						<Route path="/completeKYC" element={<KycPage />} />
 					</Routes>
 				) : (
-					<div>
-						<Routes>
-							{/* Dashboard Related Routes */}
-							<Route element={<DashboardLayout />}>
-								<Route path="/dashboard" element={<Dashboard />} />
-								<Route path="/Account" element={<AccountPage />} />
-							</Route>
-							{/* Web page related Routes */}
-							<Route element={<WebPageLayout />}>
-								<Route exact path="/" element={<Home />} />
-								<Route exact path="/about" element={<About />} />
-								<Route exact path="/services" element={<Services />} />
-								<Route exact path="/products" element={<Home />} />
-								<Route exact path="/membership" element={<Home />} />
-								<Route exact path="/contact" element={<Home />} />
-							</Route>
-						</Routes>
+					<div className="d-lg-flex">
+						<div className="col-lg-2">
+							<Sidebar />
+						</div>
+						<div className="col-lg-10">
+							<div className="pages pt-4">
+								<Routes>
+									<Route path="/" element={<Dashboard />} />
+									<Route path="/Account" element={<AccountPage />} />
+								</Routes>
+							</div>
+						</div>
 					</div>
 				)}
 			</AppWrapperComp>
+			{/* Navigation */}
+			<div className="fixed w-full z-[10000000]">
+				<Navbar />
+			</div>
+			{/* Page Content Start */}
+			<Routes>
+				<Route exact path="/" element={<Home />} />
+				<Route exact path="/about" element={<About />} />
+				<Route exact path="/services" element={<Services />} />
+			</Routes>
+			{/* Page Content End */}
+
+			{/* Footer */}
+			<Footer />
 		</div>
 	);
 }

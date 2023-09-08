@@ -7,15 +7,27 @@
     --root-bg: #fff;
     --highlight: #8d4000;
     --light-highlight: #fff1e5;
+    --light-highlight2: #fffcfa;
     --highlight2: #ff9100;
     --primary: #161616;
     --secondary: #1E0700;
+    --text: #1e1e1e;
 
     --light-bg: #fafafa;
     --card-bg: #f8f8f8;
     --appstore-bg: #efefef;
     --header: #162F43;
 
+}
+
+body{
+    background: var(--root-bg);
+    color: var(--text)
+}
+
+*{
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-duration: 2s;
 }
 
 .container{
@@ -31,7 +43,7 @@ h2{
 }
 
 h3{
-    @apply text-[23px] leading-[38.2px] md:text-[25px] md:leading-[40.2px] lg:text-[28px] lg:leading-[46.2px] xl:text-[32px] xl:leading-[51.2px]
+    @apply text-[20px] leading-[30.2px] md:text-[22px] md:leading-[35.2px] 
 }
 
 p, button, a{
@@ -39,7 +51,7 @@ p, button, a{
 }
 
 .button{
-    @apply rounded-3xl py-3 px-5 shadow
+    @apply rounded-3xl py-3 px-5 shadow hover:scale-105
 }
 
 .footer-link{
@@ -51,5 +63,14 @@ p, button, a{
 }
 
 .icon-link{
-    @apply w-[28px] h-[28px]
+    @apply w-[30px] h-[30px]
+}
+
+
+.multi-color-text span{
+    @apply text-gray-400
+}
+
+button:hover{
+    @apply scale-105
 }
