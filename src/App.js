@@ -1,12 +1,10 @@
 import "./App.css";
-import { Navbar, Footer } from "./components";
 import { Home, About, Services } from "./pages";
 import { Routes, Route, useLocation } from "react-router-dom";
 
 import AppWrapperComp from "./components/appWrapper";
 import DashboardLayout from "./components/appWrapper/DashboardLayout.jsx";
 import WebPageLayout from "./components/appWrapper/WebPageLayout.jsx";
-import Sidebar from "./components/appWrapper/sidebar";
 import AccountPage from "./pages/account";
 import LoginPage from "./pages/auth/login";
 import SignUpPage from "./pages/auth/signup";
