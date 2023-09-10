@@ -5,7 +5,7 @@ import { dummyTransactions } from "../../components/utils/dummyDatas";
 export default function HomePage() {
 	return (
 		<div className="home-page">
-			<div className="row pb-3">
+			<div className="row">
 				<div className="col-md-6">
 					<img src="" alt="" />
 					<p className="mb-0" style={{ fontSize: "35px" }}>
