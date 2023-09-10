@@ -6,31 +6,31 @@ import vector from "../assets/vector.png";
 const Offer = ({ title, text, pos }) => (
 	<div
 		className={`${
-			pos === "bottom" && "lg:pt-[50px]"
-		} w-full lg:w-full flex justify-center z-[10] `}
+			pos === "bottom" && "lg:tw-pt-[50px]"
+		} tw-w-full lg:tw-w-full tw-flex tw-justify-center tw-z-[10] `}
 	>
 		<div
-			className={`max-w-[235px] md:max-w-[100%] lg:max-w-[200px] flex flex-col items-center text-center bg-white lg:bg-transparent rounded-xl p-6 md:p-8 lg:p-0`}
+			className={`tw-max-w-[235px] md:tw-max-w-[100%] lg:tw-max-w-[200px] tw-flex tw-flex-col tw-items-center tw-text-center tw-bg-white lg:tw-bg-transparent tw-rounded-xl tw-p-6 md:tw-p-8 lg:tw-p-0`}
 		>
 			<div>
-				<img src={checkmark} alt="offer" className="w-[100px]" />
+				<img src={checkmark} alt="offer" className="tw-w-[100px]" />
 			</div>
-			<h3 className="font-bold text-[20px] leading-[27px] py-[15px]">
+			<h3 className="tw-font-bold tw-text-[20px] tw-leading-[27px] tw-py-[15px] tw-h3">
 				{title}
 			</h3>
-			<p>{text}</p>
+			<p className="tw-p">{text}</p>
 		</div>
 	</div>
 );
 
 const WhatWeOffer = () => {
 	return (
-		<div className="pt-[30px] pb-[60px] md:py-[100px] bg-[var(--light-bg)]">
-			<div className="container">
-				<div className="flex flex-col gap-[15px] max-w-[604px] mx-auto text-center text-[var(--highlight)]">
-					<h1>What we Offer</h1>
+		<div className="tw-pt-[30px] tw-pb-[60px] md:tw-py-[100px] tw-bg-[var(--light-bg)]">
+			<div className="gp-container">
+				<div className="tw-flex tw-flex-col tw-gap-[15px] tw-max-w-[604px] tw-mx-auto tw-text-center tw-text-[var(--highlight)]">
+					<h1 className="tw-h1">What we Offer</h1>
 				</div>
-				<div className="pt-[35px] md:pt-[50px] gap-[30px] grid grid-cols-1 md:grid-cols-2 lg:flex justify-between relative flex-wrap lg:flex-nowrap">
+				<div className="tw-pt-[35px] md:tw-pt-[50px] tw-gap-[30px] tw-grid tw-grid-cols-1 md:tw-grid-cols-2 lg:tw-flex tw-justify-between tw-relative tw-flex-wrap lg:tw-flex-nowrap">
 					<Offer
 						title="Land Owners Club"
 						text="Invest in land units across various locations for steady passive rental income."
@@ -52,8 +52,8 @@ const WhatWeOffer = () => {
 						pos="bottom"
 					/>
 					{/* Vector */}
-					<div className="hidden lg:block absolute left-0 top-0 w-full h-full px-[150px] pt-[70px] lg:px-[100px] lg:pt-[80px] xl:px-[150px] xl:pt-[70px]">
-						<img src={vector} alt="vector" className="w-full" />
+					<div className="tw-hidden lg:tw-block tw-absolute tw-left-0 tw-top-0 tw-w-full tw-h-full tw-px-[150px] tw-pt-[70px] lg:tw-px-[100px] lg:tw-pt-[80px] xl:tw-px-[150px] xl:tw-pt-[70px]">
+						<img src={vector} alt="vector" className="tw-w-full" />
 					</div>
 				</div>
 			</div>

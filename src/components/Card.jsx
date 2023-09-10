@@ -1,10 +1,10 @@
 import React from "react";
 const Card = ({ icon, title, text }) => {
 	return (
-		<div className="bg-[var(--card-bg)] rounded-xl px-5 py-8 shadow">
+		<div className="tw-bg-[var(--card-bg)] tw-rounded-xl tw-px-5 tw-py-8 tw-shadow">
 			<img src={icon} alt={title} />
-			<h3 className="font-semibold pt-8 pb-6">{title}</h3>
-			<p>{text}</p>
+			<h3 className="tw-font-semibold tw-pt-8 tw-pb-6 tw-h3">{title}</h3>
+			<p className="tw-p">{text}</p>
 		</div>
 	);
 };

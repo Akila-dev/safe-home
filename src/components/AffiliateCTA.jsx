@@ -2,17 +2,17 @@ import React from "react";
 
 const AffiliateCTA = () => {
 	return (
-		<div className="bg-[var(--light-bg)] py-[35px] md:py-[70px]">
-			<div className="container">
-				<div className="max-w-[599px] mx-auto flex flex-col items-center text-center gap-[20px]">
-					<h1 className="text-[var(--highlight)]">Be an Affiliate</h1>
-					<h3>
+		<div className="tw-bg-[var(--light-bg)] tw-py-[35px] md:tw-py-[70px]">
+			<div className="gp-container">
+				<div className="tw-max-w-[599px] tw-mx-auto tw-flex tw-flex-col tw-items-center tw-text-center tw-gap-[20px]">
+					<h1 className="text-[var(--highlight)] tw-h1">Be an Affiliate</h1>
+					<h3 className="tw-h3">
 						Join Safe-Home as an affiliate today and earn up to 20% per
 						referral.
 					</h3>
 					<a
 						href="/"
-						className="bg-[var(--header)] text-white w-[256px] py-3 rounded-[2rem]"
+						className="tw-bg-[var(--header)] tw-text-white tw-w-[256px] tw-py-3 tw-rounded-[2rem] tw-a tw-button"
 					>
 						Become an Affiliate
 					</a>

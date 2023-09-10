@@ -6,30 +6,34 @@ import appstore from "../assets/appstore.png";
 
 const Hero = () => {
 	return (
-		<div className="w-full h-screen">
+		<div className="tw-w-full tw-h-screen">
 			{/* Image */}
 			<div>
-				<img src={hero} alt="hero" className="w-full h-screen object-cover" />
+				<img
+					src={hero}
+					alt="hero"
+					className="tw-w-full tw-h-screen tw-object-cover"
+				/>
 			</div>
 			{/* Content */}
-			<div className="absolute top-0 left-0 w-full h-screen flex justify-center items-center">
-				<div className="container text-center flex justify-center items-center flex-col gap-[15px] pt-[80px]">
-					<h1 className="text-white max-w-[868px]">
-						Welcome to <span className="text-[--highlight]">Safe-Home</span>, A{" "}
-						<span className="text-[--highlight]">multipurpose</span>{" "}
+			<div className="tw-absolute tw-top-0 tw-left-0 tw-w-full tw-h-screen tw-flex tw-justify-center tw-items-center">
+				<div className="gp-container tw-text-center tw-flex tw-justify-center tw-items-center tw-flex-col tw-gap-[15px] tw-pt-[80px]">
+					<h1 className="tw-text-white tw-max-w-[868px] tw-h1">
+						Welcome to <span className="tw-text-[--highlight]">Safe-Home</span>,
+						A <span className="tw-text-[--highlight]">multipurpose</span>{" "}
 						Cooperative  Society Limited
 					</h1>
-					<p className="text-white max-w-[488px]">
+					<p className="tw-text-white tw-max-w-[488px] tw-p">
 						With our strong foundation of trust, support, and shared values,
 						we're here to provide you with the financial solutions and
 						opportunities you need.
 					</p>
-					<div className="py-5 flex flex-col md:flex-row gap-3">
-						<button className="w-[175px] h-[58px] md:w-[185px] md:h-[63px] bg-black p-3 rounded-2xl text-center shadow">
-							<img src={playstore} alt="" className="h-full inline" />
+					<div className="tw-py-5 tw-flex tw-flex-col md:tw-flex-row tw-gap-3">
+						<button className="tw-w-[175px] tw-h-[58px] md:tw-w-[185px] md:tw-h-[63px] tw-bg-black tw-p-3 tw-rounded-2xl tw-text-center tw-shadow tw-button">
+							<img src={playstore} alt="" className="tw-h-full tw-inline" />
 						</button>
-						<button className="w-[175px] h-[58px] md:w-[185px] md:h-[63px] bg-[var(--appstore-bg)] p-3 rounded-2xl text-center shadow">
-							<img src={appstore} alt="" className="h-full inline" />
+						<button className="tw-w-[175px] tw-h-[58px] md:tw-w-[185px] md:tw-h-[63px] tw-bg-[var(--appstore-bg)] tw-p-3 tw-rounded-2xl tw-text-center tw-shadow tw-button">
+							<img src={appstore} alt="" className="tw-h-full tw-inline" />
 						</button>
 					</div>
 				</div>

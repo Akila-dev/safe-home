@@ -41,7 +41,7 @@ export default function Sidebar() {
 				<div className="navigation mt-3 d-none d-lg-block">
 					<ul>
 						<Link to="/dashboard" className="link">
-							<li className={splitLocation[1] === "" ? "active" : ""}>
+							<li className={splitLocation[1] === "dashboard" ? "active" : ""}>
 								<span>
 									<i className="ri-home-5-fill" />
 									<h6>Home</h6>

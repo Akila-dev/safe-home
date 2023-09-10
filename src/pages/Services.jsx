@@ -15,12 +15,12 @@ import officeIcon from "../assets/officeIcon.png";
 
 const Services = () => {
 	return (
-		<div className="pt-[80px]">
-			<div className="bg-[var(--light-highlight2)] pt-[70px] pb-[35px] md:pt-[100px] md:pb-[50px]">
-				<div className="container">
-					<div className="md:max-w-[500px] mx-auto md:text-center flex flex-col gap-[25px] md:items-center">
-						<h1 className="text-[var(--header)]">Savings</h1>
-						<p>
+		<div className="tw-pt-[80px]">
+			<div className="tw-bg-[var(--light-highlight2)] tw-pt-[70px] tw-pb-[35px] md:tw-pt-[100px] md:tw-pb-[50px]">
+				<div className="gp-container">
+					<div className="md:tw-max-w-[500px] tw-mx-auto md:tw-text-center tw-flex tw-flex-col tw-gap-[25px] md:tw-items-center">
+						<h1 className="tw-text-[var(--header)] tw-h1">Savings</h1>
+						<p className="tw-p">
 							At Safe-home Cooperative, we offer two types of savings plans to
 							suit your financial objectives.
 						</p>
@@ -28,7 +28,7 @@ const Services = () => {
 				</div>
 			</div>
 
-			<div className="pt-[25px] md:pt-[50px]">
+			<div className="tw-pt-[25px] md:tw-pt-[50px]">
 				<TrackRecord
 					img={goalbased}
 					header="Goal Based Savings"
@@ -43,11 +43,11 @@ const Services = () => {
 				/>
 			</div>
 
-			<div className="bg-[var(--light-highlight2)] pt-[70px] pb-[35px] md:pt-[100px] md:pb-[50px]">
-				<div className="container">
-					<div className="md:max-w-[500px] mx-auto md:text-center flex flex-col gap-[25px] md:items-center">
-						<h1 className="text-[var(--header)]">Investments</h1>
-						<p>
+			<div className="tw-bg-[var(--light-highlight2)] tw-pt-[70px] tw-pb-[35px] md:tw-pt-[100px] md:tw-pb-[50px]">
+				<div className="gp-container">
+					<div className="md:tw-max-w-[500px] tw-mx-auto md:tw-text-center tw-flex tw-flex-col tw-gap-[25px] md:tw-items-center">
+						<h1 className="tw-text-[var(--header)] tw-h1">Investments</h1>
+						<p className="tw-p">
 							Explore our diverse and carefully selected real estate investment
 							opportunities with high yields.
 						</p>
@@ -64,8 +64,8 @@ const Services = () => {
 				/>
 			</div>
 
-			<div className="py-[35px] bg-[var(--light-bg)]">
-				<div className="container grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[1.5rem] md:gap-[2rem]">
+			<div className="tw-py-[35px] tw-bg-[var(--light-bg)]">
+				<div className="gp-container tw-grid tw-grid-cols-1 md:tw-grid-cols-2 xl:tw-grid-cols-4 tw-gap-[1.5rem] md:tw-gap-[2rem]">
 					<Card
 						icon={switchIcon}
 						title="Land Owners Club"
@@ -89,16 +89,16 @@ const Services = () => {
 				</div>
 			</div>
 
-			<div className="bg-[var(--light-highlight2)] pt-[70px] pb-[35px] md:pt-[100px] md:pb-[50px]">
-				<div className="container">
-					<div className="md:max-w-[500px] mx-auto md:text-center flex flex-col gap-[25px] md:items-center">
-						<h1 className="text-[var(--header)] flex gap-4 items-center">
+			<div className="tw-bg-[var(--light-highlight2)] tw-pt-[70px] tw-pb-[35px] md:tw-pt-[100px] md:tw-pb-[50px]">
+				<div className="gp-container">
+					<div className="md:tw-max-w-[500px] tw-mx-auto md:tw-text-center tw-flex tw-flex-col tw-gap-[25px] md:tw-items-center">
+						<h1 className="tw-text-[var(--header)] tw-flex tw-gap-4 tw-items-center tw-h1">
 							Loans{" "}
-							<span className="text-xl md:text-3xl text-gray-400 inline-block">
+							<span className="tw-text-xl md:tw-text-3xl tw-text-gray-400 tw-inline-block">
 								(Coming Soon)
 							</span>
 						</h1>
-						<p>
+						<p className="tw-p">
 							Stay tuned for future updates! Soon, we will introduce a loan
 							system to our members, offering additional financial opportunities
 							and services to further enrich your cooperative experience.
@@ -110,8 +110,8 @@ const Services = () => {
 			{/* CTA */}
 			<JoinUsCTA />
 
-			<div className="container py-[35px] md:py-[80px]">
-				<h3 className="multi-color-text text-center md:text-[2rem] md:leading-[3.3rem] xl:text-[2.5rem] xl:leading-[3.8rem] max-w-[850px] mx-auto">
+			<div className="gp-container tw-py-[35px] md:tw-py-[80px]">
+				<h3 className="multi-color-text tw-text-center md:tw-text-[2rem] md:tw-leading-[3.3rem] xl:tw-text-[2.5rem] xl:tw-leading-[3.8rem] tw-max-w-[850px] tw-mx-auto tw-h3">
 					At Safe-home <span>Cooperative</span>, we prioritize <span>your</span>{" "}
 					financial growth <span>and</span> security. <span>Our</span> savings{" "}
 					<span>and</span> investment <span>plans are</span> tailored{" "}

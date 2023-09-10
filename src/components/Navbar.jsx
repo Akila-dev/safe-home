@@ -11,13 +11,18 @@ const Navlink = ({ nav, link }) => {
 
 	return (
 		<div
-			className={`${
-				location.pathname === link
-					? "text-[var(--highlight)]"
-					: "text-[var(--header)]"
-			} hover:text-[var(--highlight)] font-[500] border-b lg:border-0 border-[var(--card-bg)] w-full lg:w-auto pb-3 px-1 lg:p-0`}
+			className={`tw-font-[500] tw-border-b lg:tw-border-0 tw-border-[var(--card-bg)] tw-w-full lg:tw-w-auto tw-pb-3 tw-px-1 lg:tw-p-0 gp-navlink`}
 		>
-			<a href={link}>{nav}</a>
+			<a
+				href={link}
+				className={`${
+					location.pathname === link
+						? "tw-text-[var(--highlight)]"
+						: "tw-text-[var(--header)]"
+				} hover:tw-text-[var(--highlight)] tw-a`}
+			>
+				{nav}
+			</a>
 		</div>
 	);
 };
@@ -27,14 +32,18 @@ const Navbar = () => {
 	const navigate = useNavigate();
 
 	return (
-		<div className="h-[80px] w-full bg-white shadow">
-			<div className="px-[1.3rem] md:px-[3rem] lg:px-[6rem] flex items-center justify-between h-full">
-				<div className="z-[1]">
+		<div className="tw-h-[80px] tw-w-full tw-bg-white tw-shadow">
+			<div className="tw-px-[1.3rem] md:tw-px-[3rem] lg:tw-px-[6rem] tw-flex tw-items-center tw-justify-between tw-h-full">
+				<div className="tw-z-[1]">
 					<a href="/">
-						<img src={logo} alt="logo" className="w-[91.48px] h-[40px]" />
+						<img
+							src={logo}
+							alt="logo"
+							className="tw-w-[91.48px] tw-h-[40px] tw-a"
+						/>
 					</a>
 				</div>
-				<div className="hidden lg:flex w-full items-center justify-center gap-8">
+				<div className="tw-hidden lg:tw-flex tw-w-full tw-items-center tw-justify-center tw-gap-8">
 					<Navlink nav="About Us" link="/about" />
 					<Navlink nav="Services" link="/services" />
 					<Navlink nav="Products" link="/products" />
@@ -42,28 +51,28 @@ const Navbar = () => {
 					<Navlink nav="Contact" link="/contact" />
 				</div>
 				<div>
-					<div className="py-5 hidden lg:flex flex-col md:flex-row gap-3 items-center">
+					<div className="tw-hidden lg:tw-flex tw-flex-col md:tw-flex-row tw-gap-3 tw-items-center">
 						<button
-							className="w-[109px] h-[40px] bg-white text-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow"
-							onClick={() => navigate("/")}
+							className="tw-w-[109px] tw-h-[40px] tw-bg-white tw-text-[var(--highlight)] tw-border tw-border-[var(--highlight)] tw-p-1 tw-rounded-[2rem] tw-text-center tw-shadow tw-button"
+							onClick={() => navigate("/login")}
 						>
 							Log in
 						</button>
 						<button
-							className="w-[109px] h-[40px] text-white bg-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow"
-							onClick={() => navigate("/")}
+							className="tw-w-[109px] tw-h-[40px] tw-text-white tw-bg-[var(--highlight)] tw-border tw-border-[var(--highlight)] tw-p-1 tw-rounded-[2rem] tw-text-center tw-shadow tw-button"
+							onClick={() => navigate("/signup")}
 						>
 							Sign Up
 						</button>
 					</div>
 				</div>
-				<div className="z-[1]">
+				<div className="tw-z-[1]">
 					<button
-						className="lg:hidden text-3xl pt-1 "
+						className="lg:tw-hidden tw-text-3xl tw-pt-1 "
 						onClick={() => setNavIsOpen((prev) => !prev)}
 					>
 						{navIsOpen ? (
-							<IoCloseSharp className="text-white " />
+							<IoCloseSharp className="tw-text-white " />
 						) : (
 							<HiMiniBars3CenterLeft />
 						)}
@@ -73,7 +82,7 @@ const Navbar = () => {
 
 			{/* Mobile screen navigation */}
 			{navIsOpen && (
-				<div className="fixed lg:hidden top-0 right-0 h-screen w-full bg-[rgba(0,0,0,0.5)]">
+				<div className="tw-fixed lg:tw-hidden tw-top-0 tw-right-0 tw-h-screen tw-w-full tw-bg-[rgba(0,0,0,0.5)]">
 					{/* <div className="w-full fixed top-0 right-0 py-4 px-2 text-center text-gray-400">
 						<button
 							className="text-[2rem] p-2"
@@ -82,19 +91,19 @@ const Navbar = () => {
 							<IoCloseSharp />
 						</button>
 					</div> */}
-					<div className="flex w-[215px] h-full flex-col items-start justify-between bg-white pt-[100px] pb-[2rem] px-[1.5rem] shadow">
-						<div className="flex flex-col items-start gap-4 w-full">
+					<div className="tw-flex tw-w-[215px] tw-h-full tw-flex-col tw-items-start tw-justify-between tw-bg-white tw-pt-[100px] tw-pb-[2rem] tw-px-[1.5rem] tw-shadow">
+						<div className="tw-flex tw-flex-col tw-items-start tw-gap-4 tw-w-full">
 							<Navlink nav="About Us" link="/about" />
 							<Navlink nav="Services" link="/services" />
 							<Navlink nav="Products" link="/" />
 							<Navlink nav="Membership" link="/" />
 							<Navlink nav="Contact" link="/" />
 						</div>
-						<div className="py-5 flex lg:hidden flex-col gap-3 items-center w-full">
-							<button className="w-full h-[40px] bg-white text-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow">
+						<div className="tw-py-5 tw-flex lg:tw-hidden tw-flex-col tw-gap-3 tw-items-center tw-w-full">
+							<button className="tw-w-full tw-h-[40px] tw-bg-white tw-text-[var(--highlight)] tw-border tw-border-[var(--highlight)] tw-p-1 tw-rounded-[2rem] tw-text-center tw-shadow tw-button">
 								Log in
 							</button>
-							<button className="w-full h-[40px] text-white bg-[var(--highlight)] border border-[var(--highlight)] p-1 rounded-[2rem] text-center shadow">
+							<button className="tw-w-full tw-h-[40px] tw-text-white tw-bg-[var(--highlight)] tw-border tw-border-[var(--highlight)] tw-p-1 tw-rounded-[2rem] tw-text-center tw-shadow tw-button">
 								Sign Up
 							</button>
 						</div>

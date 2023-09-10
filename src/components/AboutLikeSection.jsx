@@ -12,36 +12,36 @@ const AboutLikeSection = ({
 	return (
 		<div
 			className={`${
-				bg && "bg-[var(--light-bg)]"
-			} w-full pt-[35px] pb-[60px] md:pt-[50px] md:pb-[100px]`}
+				bg && "tw-bg-[var(--light-bg)]"
+			} tw-w-full tw-pt-[35px] tw-pb-[60px] md:tw-pt-[50px] md:tw-pb-[100px]`}
 		>
-			<div className="container">
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-[25px] md:gap-[100px] items-center max-w-[1000px] mx-auto">
+			<div className="gp-container">
+				<div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-[25px] md:tw-gap-[100px] tw-items-center tw-max-w-[1000px] tw-mx-auto">
 					{imgSide === "left" && (
-						<div className="hidden md:block pt-[15px] md:pt-0">
-							<img src={img} alt="" className="w-full" />
+						<div className="tw-hidden md:tw-block tw-pt-[15px] md:tw-pt-0">
+							<img src={img} alt="" className="tw-w-full" />
 						</div>
 					)}
-					<div className="flex flex-col gap-[1.5rem]">
-						<h1>{header}</h1>
-						<p className="">{text}</p>
+					<div className="tw-flex tw-flex-col tw-gap-[1.5rem]">
+						<h1 className="tw-h1">{header}</h1>
+						<p className="tw-p">{text}</p>
 						<a
 							href={btnUrl}
-							className="button bg-[var(--highlight)] text-white w-[197px] text-center block"
+							className="gp-button tw-bg-[var(--highlight)] tw-text-white tw-w-[197px] tw-text-center tw-block tw-a"
 						>
 							{btnText}
 						</a>
 					</div>
 
 					{imgSide === "right" && (
-						<div className="hidden md:block pt-[15px] md:pt-0">
-							<img src={img} alt="" className="w-full" />
+						<div className="tw-hidden md:tw-block tw-pt-[15px] md:tw-pt-0">
+							<img src={img} alt="" className="tw-w-full" />
 						</div>
 					)}
 
 					{/* IMAGE ON MOBILE SCREEN */}
-					<div className="md:hidden pt-[15px] md:pt-0">
-						<img src={img} alt="" className="w-full" />
+					<div className="md:tw-hidden tw-pt-[15px] md:tw-pt-0">
+						<img src={img} alt="" className="tw-w-full" />
 					</div>
 				</div>
 			</div>

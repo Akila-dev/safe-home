@@ -16,7 +16,7 @@ import about4 from "../assets/strategic-leadership.png";
 
 const About = () => {
 	return (
-		<div className="pt-[80px]">
+		<div className="tw-pt-[80px]">
 			<Hero2
 				img={about}
 				header1="About"
@@ -25,8 +25,8 @@ const About = () => {
 				imgSide="right"
 			/>
 			{/* Mission and Vision Statement */}
-			<div className="pt-[35px] pb-[60px] md:py-[50px] bg-[var(--light-bg)]">
-				<div className="container grid grid-cols-1 md:grid-cols-2 gap-[1.5rem] lg:gap-[2rem]">
+			<div className="tw-pt-[35px] tw-pb-[60px] md:tw-py-[50px] tw-bg-[var(--light-bg)]">
+				<div className="gp-container tw-grid tw-grid-cols-1 md:tw-grid-cols-2 tw-gap-[1.5rem] lg:tw-gap-[2rem]">
 					<VisionMissionCard
 						title="Our Mission Statement"
 						text="Our mission is to build a reliable and inclusive platform that coordinates private funds, offering a secure source of credit and investment opportunities. We are committed to providing expert guidance, exceptional security, and user-friendly tools for our members' financial growth."
@@ -40,12 +40,12 @@ const About = () => {
 			{/* CTA */}
 			<JoinUsCTA />
 			{/* Track Record */}
-			<div className="pt-[35px] pb-[35px] md:pt-[100px] md:pb-[50px] container">
-				<div className="flex flex-col gap-[15px] max-w-[836px] mx-auto text-center">
-					<h1 className="text-[var(--highlight)] lg:scale-90">
+			<div className="tw-pt-[35px] tw-pb-[35px] md:tw-pt-[100px] md:tw-pb-[50px] gp-container">
+				<div className="tw-flex tw-flex-col tw-gap-[15px] tw-max-w-[836px] tw-mx-auto tw-text-center">
+					<h1 className="tw-text-[var(--highlight)] lg:tw-scale-90 tw-h1">
 						Our Track Record
 					</h1>
-					<p>
+					<p className="tw-p">
 						At Safehome Cooperative, our founding team comprises seasoned
 						professionals from the real estate and finance sectors, collectively
 						boasting an impressive half-century of industry experience. With a

@@ -30,47 +30,58 @@ body{
     transition-duration: 2s;
 }
 
-.container{
-    @apply max-w-[1440px] px-[1.3rem] md:px-[4rem] lg:px-[6rem] xl:px-[10rem] mx-auto
+.gp-container{
+    @apply tw-max-w-[1440px] tw-px-[1.3rem] md:tw-px-[4rem] lg:tw-px-[6rem] xl:tw-px-[10rem] tw-mx-auto
 }
 
-h1{
-    @apply text-[32px] leading-[42.4px] sm:text-[40px] sm:leading-[52.4px] md:text-[45.5px] md:leading-[60.4px] lg:text-[53.5px] lg:leading-[69.4px] xl:text-[64px] xl:leading-[86.4px] font-bold
+.tw-h1{
+    @apply tw-text-[32px] tw-leading-[42.4px] sm:tw-text-[40px] sm:tw-leading-[52.4px] md:tw-text-[45.5px] md:tw-leading-[60.4px] lg:tw-text-[53.5px] lg:tw-leading-[69.4px] xl:tw-text-[64px] xl:tw-leading-[86.4px] tw-font-bold
 }
 
-h2{
-    @apply text-[28px] leading-[38.6px] md:text-[40px] md:leading-[50.6px] lg:text-[50px] lg:leading-[68.6px] xl:text-[56px] xl:leading-[75.6px] font-semibold
+.tw-h2{
+    @apply tw-text-[28px] tw-leading-[38.6px] md:tw-text-[40px] md:tw-leading-[50.6px] lg:tw-text-[50px] lg:tw-leading-[68.6px] xl:tw-text-[56px] xl:tw-leading-[75.6px] tw-font-semibold
 }
 
-h3{
-    @apply text-[20px] leading-[30.2px] md:text-[22px] md:leading-[35.2px] 
+.tw-h3{
+    @apply tw-text-[20px] tw-leading-[30.2px] md:tw-text-[22px] md:tw-leading-[35.2px] 
 }
 
-p, button, a{
-    @apply text-[15px] leading-[26.6px] md:text-[16px] md:leading-[25.6px]
+.tw-p, .tw-button, .tw-a, .gp-a, a{
+    @apply tw-text-[15px] tw-leading-[26.6px] md:tw-text-[16px] md:tw-leading-[25.6px]
 }
 
-.button{
-    @apply rounded-3xl py-3 px-5 shadow hover:scale-105
+.tw-a{
+    text-decoration: none !important;
+}
+
+/* .gp-navlink{
+    color: var(--header) !important;
+}
+.gp-navlink:hover{
+    color: var(--highlight) !important;
+} */
+
+.gp-button{
+    @apply tw-rounded-3xl tw-py-3 tw-px-5 tw-shadow hover:tw-scale-105
 }
 
 .footer-link{
-    @apply text-white text-[14px] leading-[29px] mb-3 block font-[400]
+    @apply tw-text-white tw-text-[14px] tw-leading-[29px] tw-mb-3 tw-block tw-font-[400]
 }
 
 .footer-header{
-    @apply text-white font-semibold mb-5
+    @apply tw-text-white tw-font-semibold tw-mb-5
 }
 
 .icon-link{
-    @apply w-[30px] h-[30px]
+    @apply tw-w-[30px] tw-h-[30px]
 }
 
 
 .multi-color-text span{
-    @apply text-gray-400
+    @apply tw-text-gray-400
 }
 
-button:hover{
-    @apply scale-105
+.tw-button:hover{
+    @apply tw-scale-105
 }

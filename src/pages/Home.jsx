@@ -48,16 +48,16 @@ function Home() {
 			{/* Affiliate CTA */}
 			<AffiliateCTA />
 			{/* Our Products */}
-			<div className="pt-[35px] pb-[60px] md:py-[100px] container">
-				<div className="flex flex-col gap-[15px] max-w-[604px] mx-auto text-center">
-					<h1>Our Products</h1>
-					<p>
+			<div className="tw-pt-[35px] tw-pb-[60px] md:tw-py-[100px] gp-container">
+				<div className="tw-flex tw-flex-col tw-gap-[15px] tw-max-w-[604px] tw-mx-auto tw-text-center">
+					<h1 className="tw-h1">Our Products</h1>
+					<p className="tw-p">
 						Our Product range of offerings are designed to enhance your
 						cooperative experience, reflect our commitment to quality,
 						collaboration, and community growth.
 					</p>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-[1.5rem] md:gap-[2rem] pt-[35px] md:pt-[50px]">
+				<div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-[1.5rem] md:tw-gap-[2rem] tw-pt-[35px] md:tw-pt-[50px]">
 					<Card
 						icon={peopleIcon}
 						title="Investments"
@@ -78,9 +78,11 @@ function Home() {
 			{/* What we Offer */}
 			<WhatWeOffer />
 			{/* Why Choose Us */}
-			<div className="pt-[35px] pb-[35px] md:py-[100px]">
-				<h1 className="text-[var(--highlight)] text-center">Why Choose Us</h1>
-				<div className="pt-[0px] lg:pt-[50px]">
+			<div className="tw-pt-[35px] tw-pb-[35px] md:tw-py-[100px]">
+				<h1 className="tw-text-[var(--highlight)] tw-text-center tw-h1">
+					Why Choose Us
+				</h1>
+				<div className="tw-pt-[0px] lg:tw-pt-[50px]">
 					<WhyChooseUs
 						img={about1}
 						header="Online Accessibility"
@@ -109,11 +111,11 @@ function Home() {
 			</div>
 
 			{/* Our Products */}
-			<div className="pb-[60px] md:pb-[100px] container">
-				<div className="flex flex-col gap-[15px] max-w-[604px] mx-auto text-center">
-					<h1>How Safe-Home Works</h1>
+			<div className="tw-pb-[60px] md:tw-pb-[100px] gp-container">
+				<div className="tw-flex tw-flex-col tw-gap-[15px] tw-max-w-[604px] tw-mx-auto tw-text-center">
+					<h1 className="tw-h1">How Safe-Home Works</h1>
 				</div>
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-[1.3rem] md:gap-[2rem] pt-[35px] md:pt-[50px]">
+				<div className="tw-grid tw-grid-cols-1 md:tw-grid-cols-3 tw-gap-[1.3rem] md:tw-gap-[2rem] tw-pt-[35px] md:tw-pt-[50px]">
 					<Card
 						icon={peopleIcon}
 						title="Become a Member"

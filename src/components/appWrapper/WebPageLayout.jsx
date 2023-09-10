@@ -5,7 +5,7 @@ const DashboardLayout = () => {
 	return (
 		<div className="App">
 			{/* Navigation */}
-			<div className="fixed w-full z-[10000000]">
+			<div className="tw-fixed tw-w-full tw-z-[10000000]">
 				<Navbar />
 			</div>
 

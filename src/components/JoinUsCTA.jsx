@@ -2,15 +2,15 @@ import React from "react";
 
 const JoinUsCTA = () => {
 	return (
-		<div className="bg-[var(--light-highlight)] py-[35px] md:py-[50px]">
-			<div className="container">
-				<div className="md:max-w-[500px] xl:max-w-[639px] mx-auto text-center flex flex-col gap-[25px] items-center">
-					<h3 className="text-[32px] leading-[45.2px] sm:text-[35px] sm:leading-[48.2px] md:text-[40px] md:leading-[58.2px] xl:text-[50px] xl:leading-[67.2px] font-semibold">
+		<div className="tw-bg-[var(--light-highlight)] tw-py-[35px] md:tw-py-[50px]">
+			<div className="gp-container">
+				<div className="md:tw-max-w-[500px] xl:tw-max-w-[639px] tw-mx-auto tw-text-center tw-flex tw-flex-col tw-gap-[25px] tw-items-center">
+					<h3 className="tw-text-[32px] tw-leading-[45.2px] sm:tw-text-[35px] sm:tw-leading-[48.2px] md:tw-text-[40px] md:tw-leading-[58.2px] xl:tw-text-[50px] xl:tw-leading-[67.2px] tw-font-semibold tw-h3">
 						Join us and be a part of Safe-Home today.
 					</h3>
 					<a
 						href="/"
-						className="bg-[var(--highlight)] text-white w-[256px] py-3 rounded-[2rem]"
+						className="tw-bg-[var(--highlight)] tw-text-white tw-w-[256px] tw-py-3 tw-rounded-[2rem] tw-a"
 					>
 						Become an Affiliate
 					</a>
